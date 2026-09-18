@@ -10,6 +10,7 @@ import CartPage from './pages/CartPage';
 import WishlistPage from './pages/WishlistPage';
 import NotFoundPage from './pages/NotFoundPage';
 import InfoPage from './pages/InfoPage';
+import CheckoutPage from './pages/CheckoutPage';
 
 const App: React.FC = () => (
   <BrowserRouter>
@@ -21,6 +22,7 @@ const App: React.FC = () => (
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/wishlist" element={<WishlistPage />} />
           <Route path="/info/:slug" element={<InfoPage />} />
           <Route path="*" element={<NotFoundPage />} />
