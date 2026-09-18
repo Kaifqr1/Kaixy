@@ -9,6 +9,7 @@ import ProductPage from './pages/ProductPage';
 import CartPage from './pages/CartPage';
 import WishlistPage from './pages/WishlistPage';
 import NotFoundPage from './pages/NotFoundPage';
+import InfoPage from './pages/InfoPage';
 
 const App: React.FC = () => (
   <BrowserRouter>
@@ -21,6 +22,7 @@ const App: React.FC = () => (
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/wishlist" element={<WishlistPage />} />
+          <Route path="/info/:slug" element={<InfoPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
@@ -29,5 +31,4 @@ const App: React.FC = () => (
     <Toaster position="bottom-right" gutter={8} toastOptions={{ duration: 2500, style: { background: '#18181b', color: '#fafafa', border: '1px solid #3f3f46', borderRadius: '0', fontSize: '13px', fontFamily: 'Inter, sans-serif', padding: '10px 14px' }, success: { iconTheme: { primary: '#d97706', secondary: '#fff' } } }} />
   </BrowserRouter>
 );
-
 export default App;
