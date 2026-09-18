@@ -10,9 +10,12 @@ import CartPage from './pages/CartPage';
 import WishlistPage from './pages/WishlistPage';
 import NotFoundPage from './pages/NotFoundPage';
 import InfoPage from './pages/InfoPage';
+import ScrollToTop from './components/ScrollToTop';
+import BackToTop from './components/BackToTop';
 
 const App: React.FC = () => (
   <BrowserRouter>
+    <ScrollToTop />
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-1">
@@ -27,8 +30,9 @@ const App: React.FC = () => (
         </Routes>
       </main>
       <Footer />
+      <BackToTop />
     </div>
-    <Toaster position="bottom-right" gutter={8} toastOptions={{ duration: 2500, style: { background: '#09090b', color: '#fff', border: '1px solid #7c3aed', borderRadius: '10px', fontSize: '13px', fontFamily: 'Inter, sans-serif', padding: '11px 15px', boxShadow: '0 10px 35px rgba(124,58,237,.22)' }, success: { iconTheme: { primary: '#a855f7', secondary: '#fff' } } }} />
+    <Toaster position="bottom-right" gutter={8} toastOptions={{ duration: 2500 }} />
   </BrowserRouter>
 );
 export default App;
