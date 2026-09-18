@@ -28,7 +28,7 @@ const App: React.FC = () => (
       </main>
       <Footer />
     </div>
-    <Toaster position="bottom-right" gutter={8} toastOptions={{ duration: 2500, style: { background: '#18181b', color: '#fafafa', border: '1px solid #3f3f46', borderRadius: '0', fontSize: '13px', fontFamily: 'Inter, sans-serif', padding: '10px 14px' }, success: { iconTheme: { primary: '#d97706', secondary: '#fff' } } }} />
+    <Toaster position="bottom-right" gutter={8} toastOptions={{ duration: 2500, style: { background: '#09090b', color: '#fff', border: '1px solid #7c3aed', borderRadius: '10px', fontSize: '13px', fontFamily: 'Inter, sans-serif', padding: '11px 15px', boxShadow: '0 10px 35px rgba(124,58,237,.22)' }, success: { iconTheme: { primary: '#a855f7', secondary: '#fff' } } }} />
   </BrowserRouter>
 );
 export default App;
